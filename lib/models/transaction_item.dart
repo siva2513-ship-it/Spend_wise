@@ -184,3 +184,4 @@ class TransactionItem {
   @override
   int get hashCode => id.hashCode;
 }
+
