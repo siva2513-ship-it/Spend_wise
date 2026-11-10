@@ -1,0 +1,21 @@
+# Version control
+.git
+.gitignore
+
+# Flutter & Dart local artifacts
+.dart_tool/
+build/
+*.iml
+.flutter-plugins
+.flutter-plugins-dependencies
+
+# IDE configurations
+.idea/
+.vscode/
+
+# Temporary files & logs
+*.log
+*.tmp
+*.bak
+.DS_Store
+Thumbs.db
