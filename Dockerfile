@@ -11,7 +11,7 @@ RUN git config --global --add safe.directory '*' \
     && flutter config --enable-web
 
 # Pre-cache dependencies
-COPY pubspec.yaml pubspec.lock* ./
+COPY pubspec.yaml ./
 RUN flutter pub get
 
 # Copy all project source files
