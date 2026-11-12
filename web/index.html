@@ -6,7 +6,7 @@
   <meta charset="UTF-8">
   <meta content="IE=Edge" http-equiv="X-UA-Compatible">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-  <meta name="description" content="SpendWise – Personal Expense Tracker. 100% Client-Side Offline-Ready Expense Management.">
+  <meta name="description" content="SpendWise – Personal Expense Tracker (INR - ₹). 100% Client-Side Offline-Ready Expense Management.">
   <meta name="theme-color" content="#0F766E">
 
   <!-- iOS meta tags & icons -->
@@ -18,7 +18,7 @@
   <!-- Favicon -->
   <link rel="icon" type="image/png" href="favicon.png"/>
 
-  <title>SpendWise – Personal Expense Tracker</title>
+  <title>SpendWise – Personal Expense Tracker (₹ INR)</title>
   <link rel="manifest" href="manifest.json">
   <style>
     body {
@@ -69,6 +69,23 @@
       to { transform: rotate(360deg); }
     }
   </style>
+  <script>
+    // Ensure any previously installed service worker caches are cleared immediately
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.getRegistrations().then(function(registrations) {
+        for (var i = 0; i < registrations.length; i++) {
+          registrations[i].unregister();
+        }
+      });
+    }
+    if ('caches' in window) {
+      caches.keys().then(function(names) {
+        for (var i = 0; i < names.length; i++) {
+          caches.delete(names[i]);
+        }
+      });
+    }
+  </script>
 </head>
 <body>
   <div class="loading-container" id="loading-indicator">
@@ -80,9 +97,9 @@
       </svg>
     </div>
     <div class="spinner"></div>
-    <div class="loading-text">Loading SpendWise...</div>
+    <div class="loading-text">Loading SpendWise (₹ INR)...</div>
   </div>
 
-  <script src="flutter_bootstrap.js" async></script>
+  <script src="flutter_bootstrap.js?v=inr_release_3" async></script>
 </body>
 </html>

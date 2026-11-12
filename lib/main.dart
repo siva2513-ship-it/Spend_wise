@@ -228,7 +228,7 @@ class _SpendWiseDashboardState extends State<SpendWiseDashboard> {
                 borderRadius: BorderRadius.circular(12),
               ),
               child: const Text(
-                'Web Service',
+                '₹ INR',
                 style: TextStyle(
                   fontSize: 11,
                   fontWeight: FontWeight.w700,
