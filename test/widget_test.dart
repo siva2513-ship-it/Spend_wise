@@ -123,7 +123,7 @@ void main() {
         'Test Gym Membership',
       );
       await tester.enterText(
-        find.widgetWithText(TextFormField, 'Amount (\$)'),
+        find.widgetWithText(TextFormField, 'Amount (₹)'),
         '55.00',
       );
       await tester.pumpAndSettle();

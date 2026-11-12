@@ -4,7 +4,7 @@ import '../models/transaction_item.dart';
 
 class StorageService {
   static const String _transactionsKey = 'spendwise_transactions_v1';
-  static const String _initializedKey = 'spendwise_seeded_v1';
+  static const String _initializedKey = 'spendwise_seeded_inr_v1';
 
   final SharedPreferences _prefs;
 
@@ -25,7 +25,7 @@ class StorageService {
         TransactionItem(
           id: 'seed-1',
           title: 'Monthly Salary',
-          amount: 4200.00,
+          amount: 65000.00,
           date: now.subtract(const Duration(days: 3)),
           category: TransactionCategory.salary,
           type: TransactionType.income,
@@ -34,7 +34,7 @@ class StorageService {
         TransactionItem(
           id: 'seed-2',
           title: 'Apartment Rent',
-          amount: 1450.00,
+          amount: 18000.00,
           date: now.subtract(const Duration(days: 2)),
           category: TransactionCategory.housing,
           type: TransactionType.expense,
@@ -43,7 +43,7 @@ class StorageService {
         TransactionItem(
           id: 'seed-3',
           title: 'Grocery Supermarket',
-          amount: 184.50,
+          amount: 4500.00,
           date: now.subtract(const Duration(days: 1)),
           category: TransactionCategory.food,
           type: TransactionType.expense,
@@ -52,7 +52,7 @@ class StorageService {
         TransactionItem(
           id: 'seed-4',
           title: 'Electric & Internet Bill',
-          amount: 115.00,
+          amount: 2200.00,
           date: now.subtract(const Duration(hours: 18)),
           category: TransactionCategory.utilities,
           type: TransactionType.expense,
@@ -60,8 +60,8 @@ class StorageService {
         ),
         TransactionItem(
           id: 'seed-5',
-          title: 'Stock Dividend',
-          amount: 135.20,
+          title: 'Mutual Fund Dividend',
+          amount: 3400.00,
           date: now.subtract(const Duration(hours: 12)),
           category: TransactionCategory.investment,
           type: TransactionType.income,
@@ -70,7 +70,7 @@ class StorageService {
         TransactionItem(
           id: 'seed-6',
           title: 'Cinema & Dinner',
-          amount: 68.00,
+          amount: 1650.00,
           date: now.subtract(const Duration(hours: 5)),
           category: TransactionCategory.entertainment,
           type: TransactionType.expense,

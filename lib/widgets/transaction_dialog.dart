@@ -166,9 +166,9 @@ class _TransactionDialogState extends State<TransactionDialog> {
                     controller: _amountController,
                     keyboardType: const TextInputType.numberWithOptions(decimal: true),
                     decoration: const InputDecoration(
-                      labelText: 'Amount (\$)',
+                      labelText: 'Amount (₹)',
                       hintText: '0.00',
-                      prefixIcon: Icon(Icons.attach_money),
+                      prefixIcon: Icon(Icons.currency_rupee),
                     ),
                     validator: (val) {
                       if (val == null || val.trim().isEmpty) {
